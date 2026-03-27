@@ -1,5 +1,7 @@
 # **Status V2** — Pock Widget
 
+![Touch Bar Preview](images/TouchBar-Preview-PockStatusV2Widget.gif)
+
 > ### **GIF Supporting**
 > Show an animated GIF directly on your Touch Bar, right alongside your status items.
 
@@ -45,6 +47,8 @@ No CocoaPods required. The project uses **Swift Package Manager**.
 ---
 
 ## Preferences
+
+![Settings](images/Settings.png)
 
 Open **Pock → Widgets Manager → Status V2** to configure:
 
