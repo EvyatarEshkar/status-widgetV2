@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import AppKit
 import PockKit
 
 class StatusItemView: PKView {

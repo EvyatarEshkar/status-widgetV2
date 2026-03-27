@@ -18,12 +18,13 @@
 		3401774C23D325DD00369905 /* StatusWidgetPreferencePane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3401774923D325DD00369905 /* StatusWidgetPreferencePane.swift */; };
 		34E6A27E2558706B002693EA /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E6A27D2558706B002693EA /* Media.xcassets */; };
 		34E6A281255874FA002693EA /* SLangItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E6A280255874FA002693EA /* SLangItem.swift */; };
-		C1D0E7696EB2EC07C7557D36 /* Pods_Status.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3712FB53353E8D66C89087DD /* Pods_Status.framework */; };
+		AA000005000000050000005A /* SGifItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000006000000060000006A /* SGifItem.swift */; };
+		AA000003000000030000003C /* PockKit in Frameworks */ = {isa = PBXBuildFile; productRef = AA000001000000010000001A /* PockKit */; };
+		AA000004000000040000004C /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = AA000002000000020000002A /* TinyConstraints */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3401772723D3231D00369905 /* Status.pock */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Status.pock; sourceTree = BUILT_PRODUCTS_DIR; };
-		3401772A23D3231D00369905 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
 		3401772C23D3231D00369905 /* StatusWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusWidget.swift; sourceTree = "<group>"; };
 		3401772E23D3231D00369905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3401773423D323CD00369905 /* StatusItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusItem.swift; sourceTree = "<group>"; };
@@ -40,9 +41,7 @@
 		3401774923D325DD00369905 /* StatusWidgetPreferencePane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusWidgetPreferencePane.swift; sourceTree = "<group>"; };
 		34E6A27D2558706B002693EA /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		34E6A280255874FA002693EA /* SLangItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLangItem.swift; sourceTree = "<group>"; };
-		3712FB53353E8D66C89087DD /* Pods_Status.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Status.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9347816283C4AB2AF67D68D4 /* Pods-Status.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Status.release.xcconfig"; path = "Target Support Files/Pods-Status/Pods-Status.release.xcconfig"; sourceTree = "<group>"; };
-		CB926D07BCC33E6C4950E6CD /* Pods-Status.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Status.debug.xcconfig"; path = "Target Support Files/Pods-Status/Pods-Status.debug.xcconfig"; sourceTree = "<group>"; };
+		AA000006000000060000006A /* SGifItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGifItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1D0E7696EB2EC07C7557D36 /* Pods_Status.framework in Frameworks */,
+				AA000003000000030000003C /* PockKit in Frameworks */,
+				AA000004000000040000004C /* TinyConstraints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,8 +62,6 @@
 			children = (
 				3401772923D3231D00369905 /* Status */,
 				3401772823D3231D00369905 /* Products */,
-				43D9A762481AC806E3D29B23 /* Pods */,
-				E407CFE0DC443983050B23C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,7 +76,6 @@
 		3401772923D3231D00369905 /* Status */ = {
 			isa = PBXGroup;
 			children = (
-				3401772A23D3231D00369905 /* Podfile */,
 				3401772E23D3231D00369905 /* Info.plist */,
 				3401772B23D3231D00369905 /* Sources */,
 			);
@@ -101,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				3401773623D3241000369905 /* SClockItem.swift */,
+				AA000006000000060000006A /* SGifItem.swift */,
 				34E6A280255874FA002693EA /* SLangItem.swift */,
 				3401773723D3241000369905 /* SPowerItem.swift */,
 				3401773823D3241000369905 /* SWifiItem.swift */,
@@ -127,23 +125,6 @@
 			path = StatusWidgetPreferencePane;
 			sourceTree = "<group>";
 		};
-		43D9A762481AC806E3D29B23 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CB926D07BCC33E6C4950E6CD /* Pods-Status.debug.xcconfig */,
-				9347816283C4AB2AF67D68D4 /* Pods-Status.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		E407CFE0DC443983050B23C8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3712FB53353E8D66C89087DD /* Pods_Status.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,7 +132,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3401773123D3231D00369905 /* Build configuration list for PBXNativeTarget "Status" */;
 			buildPhases = (
-				1BC8629D672E307759B16C56 /* [CP] Check Pods Manifest.lock */,
 				3401772223D3231D00369905 /* Sources */,
 				3401772323D3231D00369905 /* Frameworks */,
 				3401772423D3231D00369905 /* Resources */,
@@ -162,6 +142,10 @@
 			dependencies = (
 			);
 			name = Status;
+			packageProductDependencies = (
+				AA000001000000010000001A /* PockKit */,
+				AA000002000000020000002A /* TinyConstraints */,
+			);
 			productName = Status;
 			productReference = 3401772723D3231D00369905 /* Status.pock */;
 			productType = "com.apple.product-type.bundle";
@@ -194,6 +178,10 @@
 				tr,
 			);
 			mainGroup = 3401771D23D3231D00369905;
+			packageReferences = (
+				BB000001000000010000001B /* XCRemoteSwiftPackageReference "pockkit" */,
+				BB000002000000020000002B /* XCRemoteSwiftPackageReference "TinyConstraints" */,
+			);
 			productRefGroup = 3401772823D3231D00369905 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -208,37 +196,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3401774B23D325DD00369905 /* StatusWidgetPreferencePane.xib in Resources */,
 				34E6A27E2558706B002693EA /* Media.xcassets in Resources */,
-				3401774A23D325DD00369905 /* StatusWidgetPreferencePane.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1BC8629D672E307759B16C56 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Status-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3401772523D3231D00369905 /* Copy widget to destination folder */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -264,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA000005000000050000005A /* SGifItem.swift in Sources */,
 				3401773923D3241000369905 /* SClockItem.swift in Sources */,
 				3401773523D323CD00369905 /* StatusItem.swift in Sources */,
 				3401774C23D325DD00369905 /* StatusWidgetPreferencePane.swift in Sources */,
@@ -351,7 +316,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -403,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -412,19 +377,16 @@
 		};
 		3401773223D3231D00369905 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB926D07BCC33E6C4950E6CD /* Pods-Status.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 788D9WZ9Z3;
 				INFOPLIST_FILE = Status/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Application\\ Support/Pock/Widgets";
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pigigaldi.pock.Status;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evyatareshkar.pock.StatusV2;
+				PRODUCT_MODULE_NAME = Status;
+				PRODUCT_NAME = StatusV2;
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = pock;
 			};
@@ -432,19 +394,16 @@
 		};
 		3401773323D3231D00369905 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9347816283C4AB2AF67D68D4 /* Pods-Status.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 788D9WZ9Z3;
 				INFOPLIST_FILE = Status/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Application\\ Support/Pock/Widgets";
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pigigaldi.pock.Status;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evyatareshkar.pock.StatusV2;
+				PRODUCT_MODULE_NAME = Status;
+				PRODUCT_NAME = StatusV2;
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = pock;
 			};
@@ -472,6 +431,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BB000001000000010000001B /* XCRemoteSwiftPackageReference "pockkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pock/pockkit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.1;
+			};
+		};
+		BB000002000000020000002B /* XCRemoteSwiftPackageReference "TinyConstraints" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/roberthein/TinyConstraints.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA000001000000010000001A /* PockKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB000001000000010000001B /* XCRemoteSwiftPackageReference "pockkit" */;
+			productName = PockKit;
+		};
+		AA000002000000020000002A /* TinyConstraints */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB000002000000020000002B /* XCRemoteSwiftPackageReference "TinyConstraints" */;
+			productName = TinyConstraints;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3401771E23D3231D00369905 /* Project object */;
 }

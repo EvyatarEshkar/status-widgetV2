@@ -64,7 +64,7 @@ internal class SWifiItem: StatusItem {
             let c = code - 1
             icon = "wifi\(c > 4 ? 4 : c)"
         }
-		self.iconView.image = Bundle(for: StatusWidget.self).image(forResource: icon)
+		self.iconView.image = Bundle(for: StatusV2Widget.self).image(forResource: icon)
     }
     
 }

@@ -112,7 +112,7 @@ internal class SPowerItem: StatusItem {
                 iconName = "powerEmpty"
                 buildBatteryIcon(withValue: value)
             }
-			iconView.image    = Bundle(for: StatusWidget.self).image(forResource: iconName)
+			iconView.image    = Bundle(for: StatusV2Widget.self).image(forResource: iconName)
             iconView.isHidden = false
         }else {
             iconView.isHidden = true

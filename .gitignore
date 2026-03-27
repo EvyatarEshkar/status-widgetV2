@@ -1,10 +1,28 @@
-## .DS_Store
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
 
-## No Pods folder
+# Xcode
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# Build output
+build/
+*.pock
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# CocoaPods (not used — project uses SPM)
+Podfile
 Podfile.lock
 Pods/
-
-## Userdata
-Status.xcodeproj/xcuserdata/
-Status.xcworkspace/xcuserdata/
+*.xcworkspace

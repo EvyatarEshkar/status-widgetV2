@@ -11,7 +11,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>$(PRODUCT_NAME)</string>
+	<string>Status V2</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
@@ -21,10 +21,10 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2020 Pierluigi Galdi. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>Status.StatusWidget</string>
+	<string>Status.StatusV2Widget</string>
 	<key>PKWidgetAuthor</key>
-	<string>Pierluigi Galdi</string>
+	<string>EvyatarEshkar</string>
 	<key>PKWidgetPreferenceClass</key>
-	<string>Status.StatusWidgetPreferencePane</string>
+	<string>Status.StatusV2PreferencePane</string>
 </dict>
 </plist>
